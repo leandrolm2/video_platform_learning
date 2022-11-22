@@ -1,11 +1,13 @@
-﻿namespace OOP_IN_C_SHARP.ContentContext
+﻿using OOP_IN_C_SHARP.NotificationContext;
+
+namespace OOP_IN_C_SHARP.ContentContext
 {
     public class CareerItem : Base
     {
 
         public CareerItem(int order, string title, string description, Course course)
         {
-            if (course == null) throw new Exception("You cannot send a null value to course");
+            if (course == null) AddNotification(new Notification("Course", "ERROR! Invalid course."));
             Order = order;
             Title = title;
             Description = description;
