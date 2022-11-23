@@ -1,4 +1,5 @@
 ﻿using OOP_IN_C_SHARP.NotificationContext;
+using OOP_IN_C_SHARP.SharedContext;
 
 namespace OOP_IN_C_SHARP.ContentContext
 {

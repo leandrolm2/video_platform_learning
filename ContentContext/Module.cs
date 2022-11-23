@@ -1,4 +1,6 @@
-﻿namespace OOP_IN_C_SHARP.ContentContext
+﻿using OOP_IN_C_SHARP.SharedContext;
+
+namespace OOP_IN_C_SHARP.ContentContext
 {
     public class Module : Base
     {

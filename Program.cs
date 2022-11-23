@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using OOP_IN_C_SHARP.ContentContext;
+using OOP_IN_C_SHARP.SubscriptionContext;
 
 var articles = new List<Article>();
 
@@ -49,4 +50,7 @@ foreach(var career in careers)
             Console.WriteLine($"{notification.Property} - {notification.Message}");
         }
     }
+    var payPalSubscrition = new PayPalSubscription();
+    var student = new Student();
+    student.CreateSubscription(payPalSubscrition);
 }
